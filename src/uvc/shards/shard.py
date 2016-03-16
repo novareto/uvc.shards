@@ -35,12 +35,11 @@ except ImportError:
 def query_shard(econtext, name):
     """Compute the result of a shard expression
     """
-    context = econtext.get('context')
-    request = econtext.get('request')
     view = econtext.get('view')
     if IShardedView.providedBy(view):
-        shard = view.shards.get(name)
-        if shard is not None:
+        shard_factory = view.shards.get(name)
+        if shard_factory is not None:
+            shard = shard_factory(econtext)
             return resolve_shard(shard)
     return u""
 

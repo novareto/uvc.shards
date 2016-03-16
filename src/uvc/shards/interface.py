@@ -1,4 +1,5 @@
 from zope.interface import Interface
+from zope.schema import Dict
 
 
 class IShardedView(Interface):
