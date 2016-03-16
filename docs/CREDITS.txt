@@ -1,4 +1,4 @@
 CREDITS
 =======
 
-This package was developed for NPAI by Souheil Chelfouh.
+This package was developed for Novareto by Souheil Chelfouh.
