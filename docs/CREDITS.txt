@@ -1,0 +1,4 @@
+CREDITS
+=======
+
+This package was developed for NPAI by Souheil Chelfouh.
